@@ -1,0 +1,455 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: montserrat-semibold;
+    src: url(../fonts/montserrat-semibold.ttf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../fonts/montserrat-bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/poppins-bold.ttf);
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url(../fonts/montserrat-medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url(../fonts/poppins-semibold.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/roboto-bold.ttf)
+}
+
+.hamburger-menu {
+    display: none;
+}
+.header-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 9rem 0rem 9rem;
+    margin: 2.6rem 0rem 2.6rem 0rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: inline;
+}
+
+.menu-item {
+    display: inline;
+    font-family: montserrat-semibold;
+    font-size: 1.6rem;
+    margin-left: 11.4rem;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: #FA4A0C;
+}
+
+.selected {
+    color: #FA4A0C;
+}
+
+
+.food {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.main {
+    position: relative;
+}
+
+.main-text {
+    
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main-text-title {
+    color: #F6F6F6;
+    font-size: 2.4rem;
+    font-family: montserrat-bold;
+    display: flex;
+    justify-content: center;
+    margin: 7.3rem 0 1.7rem 0;
+}
+
+.main-text-paragraph-one {
+    color: #F6F6F6;
+    font-size: 5.8rem;
+    font-family: poppins-bold;
+    text-align: center;
+    margin: 0 0 0 0;
+    
+}
+
+.main-text-paragraph-two {
+    color: #F6F6F6;
+    font-size: 5.8rem;
+    font-family: poppins-bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.7rem 0;
+    
+}
+
+.main-text-download {
+    color:#F6F6F6;
+    font-size: 2.4rem;
+    font-family: montserrat-medium;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 5.4rem 0 3rem 0;
+}
+
+.playstore {
+    background-color: #FA4A0C;
+    font-family: montserrat-bold;
+    color:#F6F6F6;
+    font-size: 2.4rem;
+    padding: 1.6rem 5.85rem 1.6rem 5.85rem;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.appstore {
+    
+    background-color: transparent;
+    border: 0.1rem solid ;
+    border-color: #FFFFFF;
+        font-family: montserrat-bold;
+        color:#F6F6F6;
+        font-size: 2.4rem;
+        padding: 1.6rem 5.85rem 1.6rem 5.85rem;
+        border-radius: 3rem;
+        margin: 0rem 0rem 0rem 3.4rem;
+        cursor: pointer;
+        
+}
+
+.phones-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 12.9rem 0;
+}
+
+hr {
+    width: 88.4rem;
+    color: #E4E4E4;
+    border: 0.2rem solid;
+}
+
+.explain {
+    color: #000000;
+    font-size: 4.4rem;
+    font-family: poppins-semibold;
+    display: flex;
+    justify-content: center;
+} 
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0 8rem 0;
+    padding: 0 3rem 0 3rem;
+}
+
+.section-title {
+    font-family: montserrat-bold;
+    font-size: 2.4rem;
+    color: #FA4A0C;
+}
+
+.section-paragraph {
+    font-family: montserrat-bold;
+    font-size: 4rem;
+    color: #252B42;
+}
+
+.section-info {
+    font-family: montserrat-medium;
+    font-size: 2.4rem;
+    color: #737373;
+}
+
+.download-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+}
+
+.download-section-content {
+    position: absolute;
+}
+.download-section img {
+    
+    z-index: -1;
+    width: 100%;
+   
+
+}
+
+.download-section p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.download-section-title {
+    font-family: montserrat-bold;
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin: 0rem 0 2.5rem 0;
+}
+
+.download-section-paragraph {
+    font-family: montserrat-medium;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    margin: 0 0 6rem 0;
+}
+
+.download-section-playstore {
+    background-color: #FA4A0C;
+    font-family: montserrat-bold;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    padding: 1.8rem 3.1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 0 0.8rem 0 0;
+}
+
+.download-section-appstore {
+    background-color: transparent;
+    border: 0.1rem solid ;
+    border-color: #FFFFFF;
+        font-family: montserrat-bold;
+        color:#F6F6F6;
+        font-size: 1.6rem;
+        padding: 1.6rem 4.5rem ;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin: 0 0 0 0.8rem;
+}
+
+.download-section-buttons {
+    display:flex;
+    justify-content: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 0 4rem 0;
+}
+
+.footer-section p {
+   font-family:roboto-bold;
+   font-size: 1.2rem;
+   color: #5C5C5C;
+}
+
+.footer-socialmediaicons img {
+    margin: 0 1rem 0 1rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1920px) {
+    
+   body {
+       max-width: 1920px;
+      margin: auto;
+   }
+}
+
+@media only screen and (max-width: 1130px) {
+    
+    html {
+        font-size: 7px;
+    }
+
+    .menu li {
+        margin: 4rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 50%;
+    }
+    html {
+        font-size: 7px;
+    }
+
+    .food {
+        display: none;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 8rem 0;
+        padding: 0 3rem 0 3rem;
+    }
+
+    .phones-container img {
+        width: 100%;
+    }
+
+  
+
+   
+    hr {
+        
+        
+        width: 80%;
+       
+        
+    }
+
+    .section img {
+        width: 100%;
+    }
+
+    .main-text-paragraph-one {
+        text-align: center;
+    }
+    .br {
+        display: none;
+    }
+
+    .appstore {
+    
+        background-color: transparent;
+        border: 0.1rem solid ;
+        border-color: #FA4A0C;
+            font-family: montserrat-bold;
+            color:#FA4A0C;
+            font-size: 2.4rem;
+            padding: 1.6rem 5.85rem 1.6rem 5.85rem;
+            border-radius: 3rem;
+            margin: 0rem 0rem 0rem 3.4rem;
+            cursor: pointer;
+            
+    }
+
+    .download-section img {
+        display: none;
+    }
+
+    .download-section-content {
+        position: static;
+      margin: 12rem 5.4rem ;
+    }
+
+    .download-section-content p {
+        text-align: center;
+    }
+    .download-section {
+        background-color: #252B42;
+    }
+
+    
+
+    .footerlogo {
+        display: none;
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0 4rem 0;
+    }
+
+    .header-container {
+        padding: 3rem;
+    }
+
+    .main-text-download {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .section-two {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main {
+        background-color: #FAFAFA;
+    }
+
+    .main-text p{
+        color: #252B42;
+    }
+
+    .section div p {
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main-text-paragraph-one {
+        padding: 2rem;
+    }
+
+    .main-buttons {
+        padding: 1rem;
+    }
+}
+
